@@ -31,17 +31,20 @@ Cada tarea consta de los siguientes campos mínimos:
 
 A continuación se detalla el progreso planeado. Cada paso requiere del visto bueno del usuario antes de continuar:
 
-- [ ] **Configurar GitFlow e Inicializar Rama `develop`**
-  - *Estado*: En progreso
+- [x] **Configurar GitFlow e Inicializar Rama `develop`**
+  - *Estado*: Completado
   - *Commit*: `docs: agregar archivo de contexto y configurar rama develop`
-- [ ] **Paso 1: Configurar Servidor NestJS + GraphQL**
+- [x] **Paso 1: Configurar Servidor NestJS + GraphQL**
   - *Rama*: `feature/setup-nestjs`
+  - *Estado*: Completado
   - *Commit*: `feat: inicializar servidor NestJS con GraphQL y resolver de prueba`
-- [ ] **Paso 2: Tipos, Modelos y DTOs de Tareas**
+- [x] **Paso 2: Tipos, Modelos y DTOs de Tareas**
   - *Rama*: `feature/task-crud`
+  - *Estado*: Completado
   - *Commit*: `feat: definir esquemas GraphQL, DTOs y tipos para Tareas`
-- [ ] **Paso 3: Resolver y Servicio de Tareas (CRUD en memoria)**
+- [/] **Paso 3: Resolver y Servicio de Tareas (CRUD en memoria)**
   - *Rama*: `feature/task-crud`
+  - *Estado*: En progreso
   - *Commit*: `feat: implementar CRUD de tareas y documentacion JSDoc`
 - [ ] **Paso 4: Implementar Logs con AOP (NestJS Interceptor)**
   - *Rama*: `feature/aop-logging`

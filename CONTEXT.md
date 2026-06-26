@@ -42,12 +42,13 @@ A continuación se detalla el progreso planeado. Cada paso requiere del visto bu
   - *Rama*: `feature/task-crud`
   - *Estado*: Completado
   - *Commit*: `feat: definir esquemas GraphQL, DTOs y tipos para Tareas`
-- [/] **Paso 3: Resolver y Servicio de Tareas (CRUD en memoria)**
+- [x] **Paso 3: Resolver y Servicio de Tareas (CRUD en memoria)**
   - *Rama*: `feature/task-crud`
-  - *Estado*: En progreso
+  - *Estado*: Completado
   - *Commit*: `feat: implementar CRUD de tareas y documentacion JSDoc`
-- [ ] **Paso 4: Implementar Logs con AOP (NestJS Interceptor)**
+- [/] **Paso 4: Implementar Logs con AOP (NestJS Interceptor)**
   - *Rama*: `feature/aop-logging`
+  - *Estado*: En progreso
   - *Commit*: `feat: implementar interceptor de logs usando AOP (NestJS Interceptors)`
 - [ ] **Paso 5: Clean Code, Pruebas y Cierre de Rama**
   - *Rama*: `develop` (después de mergear features)

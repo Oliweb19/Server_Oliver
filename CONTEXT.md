@@ -46,10 +46,11 @@ A continuación se detalla el progreso planeado. Cada paso requiere del visto bu
   - *Rama*: `feature/task-crud`
   - *Estado*: Completado
   - *Commit*: `feat: implementar CRUD de tareas y documentacion JSDoc`
-- [/] **Paso 4: Implementar Logs con AOP (NestJS Interceptor)**
+- [x] **Paso 4: Implementar Logs con AOP (NestJS Interceptor)**
   - *Rama*: `feature/aop-logging`
-  - *Estado*: En progreso
+  - *Estado*: Completado
   - *Commit*: `feat: implementar interceptor de logs usando AOP (NestJS Interceptors)`
-- [ ] **Paso 5: Clean Code, Pruebas y Cierre de Rama**
+- [x] **Paso 5: Clean Code, Pruebas y Cierre de Rama**
   - *Rama*: `develop` (después de mergear features)
+  - *Estado*: Completado
   - *Commit*: `refactor: aplicar principios clean code y validar funcionamiento de la API`

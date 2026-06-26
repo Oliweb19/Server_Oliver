@@ -1,0 +1,31 @@
+{
+  "name": "server_oliver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oliweb19/Server_Oliver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Oliweb19/Server_Oliver/issues"
+  },
+  "homepage": "https://github.com/Oliweb19/Server_Oliver#readme",
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}

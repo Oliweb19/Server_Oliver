@@ -38,12 +38,13 @@ A continuación se detalla el progreso planeado. Cada paso requiere del visto bu
   - *Rama*: `feature/setup-nestjs`
   - *Estado*: Completado
   - *Commit*: `feat: inicializar servidor NestJS con GraphQL y resolver de prueba`
-- [/] **Paso 2: Tipos, Modelos y DTOs de Tareas**
+- [x] **Paso 2: Tipos, Modelos y DTOs de Tareas**
+  - *Rama*: `feature/task-crud`
+  - *Estado*: Completado
+  - *Commit*: `feat: definir esquemas GraphQL, DTOs y tipos para Tareas`
+- [/] **Paso 3: Resolver y Servicio de Tareas (CRUD en memoria)**
   - *Rama*: `feature/task-crud`
   - *Estado*: En progreso
-  - *Commit*: `feat: definir esquemas GraphQL, DTOs y tipos para Tareas`
-- [ ] **Paso 3: Resolver y Servicio de Tareas (CRUD en memoria)**
-  - *Rama*: `feature/task-crud`
   - *Commit*: `feat: implementar CRUD de tareas y documentacion JSDoc`
 - [ ] **Paso 4: Implementar Logs con AOP (NestJS Interceptor)**
   - *Rama*: `feature/aop-logging`

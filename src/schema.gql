@@ -2,6 +2,117 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+"""Representa una tarea de desarrollo de software."""
+type Task {
+  """Identificador único de la tarea (UUID)"""
+  id: ID!
+
+  """Título de la tarea"""
+  title: String!
+
+  """Descripción de la tarea"""
+  description: String!
+
+  """Estado actual de la tarea"""
+  status: TaskStatus!
+
+  """Etiquetas o tags de la tarea"""
+  tags: [String!]!
+
+  """Fecha de creación de la tarea"""
+  createdAt: DateTime!
+
+  """Nombre del usuario responsable"""
+  assignedUser: String!
+
+  """Nombre del proyecto al que pertenece la tarea"""
+  projectName: String!
+}
+
+"""Los estados disponibles para una tarea de desarrollo."""
+enum TaskStatus {
+  BACKLOG
+  TO_DO
+  IN_PROGRESS
+  DONE
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
 type Query {
   hello: String!
+
+  """Obtiene todas las tareas registradas."""
+  tasks: [Task!]!
+
+  """Busca una tarea específica por su ID."""
+  task(
+    """ID único de la tarea a buscar"""
+    id: ID!
+  ): Task!
+}
+
+type Mutation {
+  """Registra una nueva tarea en el sistema."""
+  createTask(
+    """Datos necesarios para la nueva tarea"""
+    createTaskInput: CreateTaskInput!
+  ): Task!
+
+  """Actualiza los atributos de una tarea existente."""
+  updateTask(
+    """Datos modificables de la tarea con su ID"""
+    updateTaskInput: UpdateTaskInput!
+  ): Task!
+
+  """Elimina de forma permanente una tarea."""
+  removeTask(
+    """ID de la tarea que se desea remover"""
+    id: ID!
+  ): Boolean!
+}
+
+"""Datos necesarios para crear una nueva tarea."""
+input CreateTaskInput {
+  """Título de la tarea"""
+  title: String!
+
+  """Descripción de la tarea"""
+  description: String!
+
+  """Etiquetas o tags de la tarea"""
+  tags: [String!]! = []
+
+  """Nombre del usuario responsable"""
+  assignedUser: String!
+
+  """Nombre del proyecto al que pertenece la tarea"""
+  projectName: String!
+}
+
+"""Datos necesarios para actualizar una tarea existente."""
+input UpdateTaskInput {
+  """Identificador único de la tarea a actualizar"""
+  id: ID!
+
+  """Nuevo título de la tarea"""
+  title: String
+
+  """Nueva descripción de la tarea"""
+  description: String
+
+  """Nuevo estado de la tarea"""
+  status: TaskStatus
+
+  """Nuevas etiquetas para la tarea"""
+  tags: [String!]
+
+  """Nuevo usuario responsable"""
+  assignedUser: String
+
+  """Nuevo proyecto de la tarea"""
+  projectName: String
 }
